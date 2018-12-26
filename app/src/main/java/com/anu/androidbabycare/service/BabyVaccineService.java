@@ -15,9 +15,9 @@ import retrofit2.http.POST;
 
 public interface BabyVaccineService {
 
-    @POST("baby-vaccine")
+    @POST("baby-vaccination")
     Call<BabyVaccine> saveBabyVaccine(@Body BabyVaccine babyVaccine);
 
-    @GET("baby-vaccine")
+    @GET("baby-vaccination")
     Call<List<BabyVaccine>> getBabyVaccine();
 }
